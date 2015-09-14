@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Formulier 1</title>
 </head>
 <body>
@@ -14,83 +13,196 @@
 
     <p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd. Voor vragen of opmerkingen kunt u contact met ons op nemen.</p>
 
-   <form>
-    <p>Contactgevens:</p>
-      <ul>
-       <li><input type="text"> Naam</li>
-       <li><input type="text"> Bedrijf</li>
-       <li><input type="text"> Adres</li>
-       <li><input type="text"> Postcode</li>
-       <li><input type="text"> Plaats</li>
-       <li><input type="number"> Telefoon</li>
-       <li><input type="Email"> Email</li>
-      </ul>
-   </form>
 
 
    <form>
-       <p>Ik wil mij aanmelden:</p>
-       <ul>
-           <li><input type="radio"> Voor een project</li>
-           <li><input type="radio"> Als stagebedrijf</li>
-       </ul>
-   </form>
+   <fieldset>
+    <h2>Contactgevens:</h2>
+           <label for="naam">Naam</label><input type="text" name="contactgevens" id="naam">
+           <label for="bedrijf">Bedrijf</label><input type="text" name="contactgevens" id="bedrijf">
+           <label for="adres">Adres</label><input type="text" name="contactgevens" id="adres">
+           <label for="postcode">Postcode</label><input type="text" name="contactgevens" id="postcode">
+           <label for="plaats">Plaats</label><input type="text" name="contactgevens" id="plaats">
+           <label for="telefoon">Telefoon</label><input type="tel" name="contactgevens" id="telefoon">
+           <label for="email">Email</label><input type="email" name="contactgevens" id="email">
 
-   <table>
-      <tr>
-           <th>Project</th>
-           <th>Stage</th>
-      </tr>
-       <tr>
-           <td>1. Titel</td>
-           <td>Geschikt voor</td>
-       </tr>
-       <tr>
-           <td>2. Opdrachtsomschrijving</td>
-           <td>1. Tweedejaars studenten</td>
-       </tr>
-       <tr>
-           <td>3. Doelgroepomschrijving</td>
-           <td>2. Afstudeer studenten</td>
-       </tr>
-       <tr>
-           <td>4. Doelstelling/intentie van het project</td>
-           <td>3. Onbekend</td>
-       </tr>
-       <tr>
-           <td>5. Looptijd</td>
-           <td> </td>
-       </tr>
-       <tr>
-           <td>6. Deadline</td>
-           <td> </td>
-       </tr>
-       <tr><th></th><th></th></tr>
-       <tr>
-           <td>Geschikt voor:</td>
-           <td>1. Hoe lang is de stage?</td>
-       </tr>
-       <tr>
-           <td>1. Eerstejaars studenten</td>
-           <td> - 10 weken</td>
-       </tr>
-       <tr>
-           <td>2. Tweedejaars studenten</td>
-           <td> - 20 weken</td>
-       </tr>
-       <tr>
-           <td>3. Derdejaars studenten</td>
-           <td>2. Begin datum</td>
-       </tr>
-       <tr>
-           <td>4. Afstudeer studenten</td>
-           <td></td>
-       </tr>
-       <tr>
-           <td>5. Onbekend</td>
-           <td></td>
-       </tr>
-   </table>
+       <h3>Ik wil mij aanmelden:</h3>
+           <input type="radio" name="aanmelden" id="project"><label for="project"> Voor een project</label>
+           <input type="radio" name="aanmelden" id="stage"><label for="stage"> Als stagebedrijf</label>
+    </fieldset>
+
+     <fieldset>
+      <h2>Project</h2>
+           <label for="titel">Titel </label><input type="text" name="projectgegevens" id="titel">
+           <label for="opdracht">Opdrachtomschrijving </label><input type="text" name="projectgegevens" id="opdracht">
+           <label for="doelgroep">Doelgroepomschrijving </label><input type="text" name="projectgegevens" id="doelgroep">
+           <label for="doelstelling">Doelstelling </label><input type="text" name="projectgegevens" id="doelstelling">
+       <h3>Looptijd:</h3>
+           <label for="10weken"> 10 weken</label><input type="radio" name="stageduur" id="10weken">
+           <label for="20weken"> 20 weken</label><input type="radio" name="stageduur" id="20weken">
+
+       <h3>Deadline</h3>
+        <select>
+           <option value="1">01</option>
+           <option value="2">02</option>
+           <option value="3">03</option>
+           <option value="4">04</option>
+           <option value="5">05</option>
+           <option value="6">06</option>
+           <option value="7">07</option>
+           <option value="8">08</option>
+           <option value="9">09</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+           <option value="13">13</option>
+           <option value="14">14</option>
+           <option value="15">15</option>
+           <option value="16">16</option>
+           <option value="17">17</option>
+           <option value="18">18</option>
+           <option value="19">19</option>
+           <option value="20">20</option>
+           <option value="21">21</option>
+           <option value="22">22</option>
+           <option value="23">23</option>
+           <option value="24">24</option>
+           <option value="25">25</option>
+           <option value="26">26</option>
+           <option value="27">27</option>
+           <option value="28">28</option>
+           <option value="29">29</option>
+           <option value="30">30</option>
+           <option value="31">31</option>
+        </select>
+
+        <select>
+           <option value="jan">Januari</option>
+           <option value="feb">Februari</option>
+           <option value="mar">Maart</option>
+           <option value="apr">April</option>
+           <option value="mei">Mei</option>
+           <option value="jun">Juni</option>
+           <option value="jul">Juli</option>
+           <option value="aug">Augustus</option>
+           <option value="sep">September</option>
+           <option value="okt">Oktober</option>
+           <option value="nov">November</option>
+           <option value="dec">December</option>
+        </select>
+
+        <select>
+           <option value="2015">2015</option>
+           <option value="2016">2016</option>
+           <option value="2017">2017</option>
+           <option value="2018">2018</option>
+        </select>
+
+           <h3>Geschikt voor:</h3>
+              <ul>
+                  <li><input type="checkbox" name="eerstejaars" id="eerstejaars"> Eerstejaars studenten </li>
+                  <li><input type="checkbox" name="tweedejaars"> Tweedejaars studenten </li>
+                  <li><input type="checkbox" name="derdejaars"> Derdejaars studenten </li>
+                  <li><input type="checkbox" name="afstudeerders"> Afstudeerders </li>
+                  <li><input type="checkbox" name="onbekend"> Onbekend </li>
+              </ul>
+
+           <label for="opmerkingproject">Opmerkingen</label><input type="text" name="opmerking" id="opmerkingproject">
+
+        </fieldset>
+
+
+        <fieldset>
+            <h2>Stage</h2>
+                <h3>Geschikt voor:</h3>
+              <ul>
+                  <li><input type="checkbox" name="eerstejaars"> Eerstejaars studenten </li>
+                  <li><input type="checkbox" name="tweedejaars"> Tweedejaars studenten </li>
+                  <li><input type="checkbox" name="onbekend"> Onbekend </li>
+              </ul>
+
+              <h3>Hoe lang is de stage?</h3>
+                  <input type="radio" name="10 weken"> 10 weken <input type="radio" name="20 weken"> 20 weken
+
+              <h3>Begin datum</h3>
+                          <select>
+           <option value="1">01</option>
+           <option value="2">02</option>
+           <option value="3">03</option>
+           <option value="4">04</option>
+           <option value="5">05</option>
+           <option value="6">06</option>
+           <option value="7">07</option>
+           <option value="8">08</option>
+           <option value="9">09</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+           <option value="13">13</option>
+           <option value="14">14</option>
+           <option value="15">15</option>
+           <option value="16">16</option>
+           <option value="17">17</option>
+           <option value="18">18</option>
+           <option value="19">19</option>
+           <option value="20">20</option>
+           <option value="21">21</option>
+           <option value="22">22</option>
+           <option value="23">23</option>
+           <option value="24">24</option>
+           <option value="25">25</option>
+           <option value="26">26</option>
+           <option value="27">27</option>
+           <option value="28">28</option>
+           <option value="29">29</option>
+           <option value="30">30</option>
+           <option value="31">31</option>
+        </select>
+
+        <select>
+           <option value="jan">Januari</option>
+           <option value="feb">Februari</option>
+           <option value="mar">Maart</option>
+           <option value="apr">April</option>
+           <option value="mei">Mei</option>
+           <option value="jun">Juni</option>
+           <option value="jul">Juli</option>
+           <option value="aug">Augustus</option>
+           <option value="sep">September</option>
+           <option value="okt">Oktober</option>
+           <option value="nov">November</option>
+           <option value="dec">December</option>
+        </select>
+
+        <select>
+           <option value="2015">2015</option>
+           <option value="2016">2016</option>
+           <option value="2017">2017</option>
+           <option value="2018">2018</option>
+        </select>
+
+        <h3>Beschrijving werkzaamheden</h3>
+            <input type="text" name="titel">
+
+        <h3>Beschrijving stagebedrijf</h3>
+            <label for="bedrijfsnaam">Bedrijfsnaam</label><input type="text" name="bedrijfsgegevens" id="bedrijfsnaam">
+            <label for="bedrijfsadres">Adres</label><input type="text" name="bedrijfsgegevens" id="bedrijfsadres">
+            <label for="bedrijfspostcode">Postcode</label><input type="text" name="bedrijfsgegevens" id="bedrijfspostcode">
+            <label for="bedrijfsplaats">Plaats</label><input type="text" name="bedrijfsgegevens" id="bedrijfsplaats">
+            <label for="bedrijfssector">Postcode</label><input type="text" name="bedrijfsgegevens" id="bedrijfssector">
+            <label for="bedrijfscore">Core business</label><input type="text" name="bedrijfsgegevens" id="bedrijfscore">
+
+            <br/><br/>
+
+            <label for="opmerkingstage">Opmerkingen</label><input type="text" name="opmerking" id="opmerkingstage">
+
+        </fieldset>
+
+       <input type="submit" name="submit" value="Submit">
+
+    </form>
+
+
 
    </main>
 
